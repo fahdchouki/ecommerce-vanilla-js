@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.sign-section {
+  height: 100vh;
+  background: url(../images/images-7/banner_img.png);
+  background-size: cover;
+  background-position: center;
+}
+.sign-form {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  text-align: center;
+}
+.sign-form > div {
+  position: absolute;
+  background: #fff;
+  border-radius: 10px;
+  width: 50%;
+  height: max-content;
+  padding: 50px 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.sign-form > div h2 {
+  font-size: 2rem;
+  margin-bottom: 25px;
+}
+.sign-form input[type="email"],
+input[type="password"],
+input[type="text"],
+button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 5px;
+  border: none;
+  outline: none;
+  width: 90%;
+}
+.sign-form input[type="email"],
+input[type="password"],
+input[type="text"] {
+  border-bottom: 2px solid rgb(4, 86, 240);
+  transition: border-color 0.5s ease;
+}
+.sign-form input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="text"]:focus {
+  border-color: rgb(245, 95, 8);
+}
+.sign-form > div button {
+  background-color: rgb(245, 95, 8);
+  color: #fff;
+  cursor: pointer;
+  margin-top: 30px;
+}
+.lbl-show {
+  display: inline-block;
+  margin-top: 15px;
+  user-select: none;
+}
